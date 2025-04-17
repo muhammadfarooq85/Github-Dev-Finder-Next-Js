@@ -114,7 +114,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-3 gap-4 bg-white dark:bg-gray-800 p-4 rounded-md text-center">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 bg-white dark:bg-gray-800 p-4 rounded-md text-center">
               <div>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
                   Public Repos
@@ -162,7 +162,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     className="text-blue-600 dark:text-blue-400 hover:underline"
                   >
-                    {userData.blog}
+                    Website
                   </a>
                 ) : (
                   "Not available"
@@ -185,7 +185,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row justify-between items-center pt-4 border-t border-gray-300 dark:border-gray-600">
+            <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0 pt-4 border-t border-gray-300 dark:border-gray-600">
               <a
                 href={userData.html_url}
                 target="_blank"
