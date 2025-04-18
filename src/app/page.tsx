@@ -79,7 +79,7 @@ export default function Home() {
           <Input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search GitHub username..."
+            placeholder="Search a developer by his/her GitHub username..."
             className="flex-grow"
             disabled={isLoading}
           />
@@ -102,14 +102,14 @@ export default function Home() {
                 height={80}
                 className="rounded-full border border-gray-300 dark:border-gray-600"
               />
-              <div className="flex flex-col gap-1">
+              <div className="flex flex-col items-center sm:items-start gap-1">
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
                   {userData.name ?? "No name"}
                 </h2>
-                <p className="text-blue-600 dark:text-blue-400">
+                <p className="text-blue-600  dark:text-blue-400">
                   @{userData.login}
                 </p>
-                <p className="text-sm text-gray-700 dark:text-gray-300">
+                <p className="text-sm text-center sm:text-left text-gray-700 dark:text-gray-300">
                   {userData.bio ?? "No bio available"}
                 </p>
               </div>
@@ -140,16 +140,12 @@ export default function Home() {
                 </p>
               </div>
             </div>
-
-            {/* Meta Info */}
-            <div className="grid sm:grid-cols-2 gap-4 text-sm text-gray-700 dark:text-gray-300">
-              <div className="flex items-center gap-2">
-                📍 {userData.location ?? "Not available"}
-              </div>
-              <div className="flex items-center gap-2">
+            <div className="grid sm:grid-cols-2 place-content-center gap-4 text-sm text-gray-700 dark:text-gray-300">
+              <div>📍 {userData.location ?? "Not available"}</div>
+              <div className="sm:text-right">
                 🏢 {userData.company ?? "Not available"}
               </div>
-              <div className="flex items-center gap-2">
+              <div>
                 🌐{" "}
                 {userData.blog ? (
                   <a
@@ -168,7 +164,7 @@ export default function Home() {
                   "Not available"
                 )}
               </div>
-              <div className="flex items-center gap-2">
+              <div className="sm:text-right">
                 🐦{" "}
                 {userData.twitter_username ? (
                   <a
@@ -184,8 +180,7 @@ export default function Home() {
                 )}
               </div>
             </div>
-
-            <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0 pt-4 border-t border-gray-300 dark:border-gray-600">
+            <div className="flex flex-col sm:flex-row sm:justify-between items-center gap-4 sm:gap-0 pt-4 border-t border-gray-300 dark:border-gray-600">
               <a
                 href={userData.html_url}
                 target="_blank"
@@ -194,7 +189,7 @@ export default function Home() {
               >
                 View GitHub Profile →
               </a>
-              <p className="text-xs text-gray-500 dark:text-gray-400">
+              <p className="text-sm text-gray-500 dark:text-gray-400">
                 Joined {new Date(userData.created_at).toLocaleDateString()}
               </p>
             </div>
