@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GitHub Developer Finder
 
-## Getting Started
+## A responsive web application built with Next.js and ShadCN UI to search and explore GitHub developer profiles in real time. This app fetches developer data via the GitHub API, providing an easy-to-use interface for discovering users, viewing their repositories, and examining their GitHub stats.
 
-First, run the development server:
+### 🔗 Live Demo: https://github-devv-finder.vercel.app
 
-```bash
+## ✨ Features
+
+### Real-time GitHub profile search – search and display GitHub user profiles instantly.
+
+### Display user stats – show relevant stats like repositories, followers, and following.
+
+### Modern and responsive UI – created with ShadCN UI for a sleek, user-friendly experience.
+
+## 🛠️ Technologies Used
+
+### Next.js – the React-based framework for building fast, scalable web apps.
+
+### ShadCN UI – for creating the beautiful and responsive UI components.
+
+### GitHub API – fetches user data and repositories in real-time.
+
+### CSS – for custom styling and UI enhancements.
+
+## Screenshot
+
+![Gtihub Dev Finder](./src/assets/images/home.JPG)
+
+## 📖 Getting Started
+
+#### To get this project up and running locally, follow these steps:
+
+### 1) Clone the repo:
+
+```
+git clone https://github.com/your-username/github-dev-finder.git
+```
+
+### 2) Install the dependencies:
+
+```
+npm install
+# or
+yarn install
+# or
+pnpm install
+
+```
+
+### 3) Run the development server::
+
+```
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 1) Open http://localhost:3000 in your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Learn More
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+#### To learn more about Next.js, take a look at the following resources:
 
-## Learn More
+#### Next.js Documentation – learn about Next.js features and API.
 
-To learn more about Next.js, take a look at the following resources:
+#### Learn Next.js – an interactive Next.js tutorial.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Deploy on Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+#### The easiest way to deploy your Next.js app is to use the Vercel Platform from the creators of Next.js.
